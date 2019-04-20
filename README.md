@@ -18,14 +18,18 @@ Folder Actions requires a configuration file named 'config.json' at same path wi
 Main object is an array of objects which defines the action that Folder Actions will execute.
 
 ## Configuration properties
-action: Type of action that will be executed. This property is mandatory. Possible values:
+**action**: Type of action that will be executed. This property is mandatory. Possible values:
 * send2trash : Move files or folders to recycle bin/trash. This value requires other properties: folder, parameter, days
 
-folder: Directory to be watched. Use two backslashes for Windows paths as backslash (\\) is a special character.
+**folder**: Directory to be watched. Use two backslashes for Windows paths as backslash (\\) is a special character.
 
-parameter: send2trash action will check some date from file metadata to decide the file is old enough. This property defines which date will be taken into consideration. Possible values:
+**parameter**: send2trash action will check some date from file metadata to decide the file is old enough. This property defines which date will be taken into consideration. Possible values:
 * st_atime : Last access time
 * st_mtime : Last modify time
 
-days: Action will execute if the file is older than given number of days.
+**days**: Action will execute if the file is older than given number of days.
 
+## To do
+* New action: Copy changed files to another destination
+* New action: Execute program if folder changed
+* Execution log

@@ -1,0 +1,8 @@
+[
+    {
+        "action": "send2trash",
+        "folder": "D:\\home\\tmp",
+        "parameter": "st_atime",
+        "days": 40
+    }
+]

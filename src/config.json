@@ -10,5 +10,11 @@
         "source": "D:\\home\\cloud\\OneDrive\\Appdata",
         "destination": "D:\\home\\cloud\\Google\\Appdata",
         "days": 2
+    },
+    {
+        "action": "popen",
+        "folder": "D:\\home\\cloud\\Google\\Appdata",
+        "command": "C:\\Program Files\\Google\\Drive\\googledrivesync.exe",
+        "days": 2
     }
 ]

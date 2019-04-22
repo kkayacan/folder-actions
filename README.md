@@ -21,6 +21,12 @@ Folder Actions requires a configuration file named 'config.json' at same path wi
         "source": "D:\\home\\cloud\\OneDrive\\Appdata",
         "destination": "D:\\home\\cloud\\Google\\Appdata",
         "days": 2
+    },
+    {
+        "action": "popen",
+        "folder": "D:\\home\\cloud\\Google\\Appdata",
+        "command": "C:\\Program Files\\Google\\Drive\\googledrivesync.exe",
+        "days": 2
     }
 ]
 ```
@@ -52,7 +58,20 @@ Copy recently changed files to another destination. Existing files with same nam
 
 **days**: Action will execute if the file is modified not before given number of days
 
-## To do
-* New action: Execute program if folder changed
+### popen
+Start a system process if files in a folder changed recently. Properties:
+
+**action**: "popen"
+
+**folder**: Directory to be watched. Use two backslashes for Windows paths as backslash (\\) is a special character.
+
+**command**: Process path to be started
+
+**days**: Action will execute if the file is modified not before given number of days
+
+## Future plans
 * Execution log
 * GUI for configuration
+* File filters
+* Complex conditions
+* Dependent/multiple actions for a condition
